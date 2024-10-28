@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 3000px;
+    }
+
+    header {        
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #000;
+        /* position을 쓰면 가로 100%가 해제됨 */
+        width: 100%;
+        /* position fixed 언제나 브라우저 전체 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: white;
+    }
+    header .logo {
+        font-size: 40px;
+        padding: 0;
+        margin: 20px 20px 30px;
+        
+
+    }
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 30px;
+        display: flex;
+        margin-right: 20px;
+    }
+
+    header nav ul li {
+        margin-right: 30px;
+    }
+    .ad-banner {
+        width: 150px;
+        height: 600px;
+        background: gray;
+
+        position: absolute;
+        right: 30px;
+        top: 150px;
+        z-index: -100;
+    }
+</style>
+<body>
+    
+    <header>
+        <h1 class="logo">로고</h1>
+        <nav>
+            <ul>
+                <li>소개</li>   
+                <li>커뮤니티</li>
+                <li>자료실</li>
+                <li>회원가입</li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="ad-banner">광고</aside>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 일치선택자 . 으로 결합시키기  */
+        span.oran {
+            color: orange;
+        } 
+        li#apple.red {
+            background: red;
+        }
+        /* id는 # */
+        .yellow.low#change.primary{
+            background: orange;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <ul>
+            <li id="apple" class="red">사과</li>
+            <li>포도</li>
+            <li class="oran">오렌지</li>
+            <li class="red">체리</li>
+        </ul>
+
+        <!-- div+p+span -->
+         <div id="change" class="primary low yellow">당근</div>
+         <p class="red">토마토</p>
+         <span class="oran">오렌지</span>
+
+    </div>
+
+</body>
+</html>

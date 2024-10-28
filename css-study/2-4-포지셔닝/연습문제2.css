@@ -1,0 +1,72 @@
+@import url(../common.css);
+body{
+    background: rgb(116, 114, 114);
+    width: 50%;
+    margin: auto;
+}
+body header{
+    padding-top: 10px;
+    padding-bottom:20px;
+
+    margin: 0 auto;
+    background: rgb(9, 58, 101)
+}
+
+h1{
+    color: yellow;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+h1 strong {
+    color: white;
+    font-size: 4rem;
+}
+h1 em {
+    color: white;
+    font-size: 3rem;
+}
+h1 span {
+    font-size: 2.5rem;
+}
+body .container {
+    display: flex;
+}
+body .container .menu{
+    
+    width: 20%;
+    padding: 12px;
+    background: rgb(220, 219, 219);
+}
+body .container .content{
+    
+    width: 80%;
+}
+body .container .menu li {
+    margin: 10px 0;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+a:hover{
+    color: rgb(5, 48, 69);
+}
+body .container .content h2 {
+    font-family: "궁서체";
+    color: yellow;
+    background: rgb(132, 19, 19);
+    font-size: 1.7rem;
+    padding: 9px;
+    padding-left: 18px;
+}
+body .container .content p {
+    background: white;
+    padding: 20px;
+    font-size: 0.7rem;        
+    line-height: 1.2rem;
+}
+footer{
+    background: rgb(154, 152, 152);
+    font-size: 0.7rem;
+    padding: 10px;
+    padding-left: 15px;
+}

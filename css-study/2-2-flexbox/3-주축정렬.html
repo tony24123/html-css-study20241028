@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            border: 2px solid red;
+            padding: 20px 0;
+            
+            /* 부모요소에 flex를 넣으면 자식들이 가로 배치된다
+            블록요소임에도 배치변경 가능 */
+            display: flex;
+
+            /* row:주축이 가로 x축
+               column:주측이 세로 y축 
+               */
+            flex-direction: row;
+            /* 양옆으로 붙고 사이에 자동으로 마진이 들어감 
+            justify-content: space-between;*/
+
+            /* justify-content: space-evenly 모두 동일한마진이 들어감 */
+            
+            /* justify-content: space-around; 주변에 마진이 들어감 */
+            justify-content: space-around;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            border: 2px solid orange;
+            border-radius: 15px;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+</body>
+</html>

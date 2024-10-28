@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경과 그라디언트 연습</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        margin: 5px;
+      }
+      .box{
+        background: lightcoral;
+      }
+      .box-image{
+        background-image: url(https://m.hollycat.co.kr/web/product/medium/202409/92dac75045e2512ac2a6cab12cfede53.jpg);
+        background-size: contain;
+        background-position: center;
+      }
+      .box-linear-gradient {
+        background: linear-gradient(to bottom , yellow, green);
+      }
+      .box-radial-gradient {
+        background: linear-gradient(to right,lightgreen,lightpink);
+        border-radius: 50%;
+      }
+      .box-combined {
+            width: 300px;
+            height: 200px;
+            background: radial-gradient(circle at top right, rgba(255, 255, 0, 0.5), rgba(255, 0, 255, 0.5)),
+                        url('https://m.hollycat.co.kr/web/product/medium/202409/92dac75045e2512ac2a6cab12cfede53.jpg'); /* 그라디언트와 이미지 결합 */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="box">기본 배경 색상이 적용된 박스</div>
+    <div class="box-image">배경 이미지가 적용된 박스</div>
+    <div class="box-linear-gradient">선형 그라디언트가 적용된 박스</div>
+    <div class="box-radial-gradient">원형 그라디언트가 적용된 박스</div>
+    <div class="box-combined">이미지와 그라디언트가 함께 적용된 박스</div>
+
+</body>
+</html>

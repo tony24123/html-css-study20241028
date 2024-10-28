@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 2000px;
+    }
+    .box {
+      width: 550px;
+      height: 350px;
+      border: 4px dashed orange;
+      margin: 250px auto;
+      background-image: url("../img/visual1.jpg");
+      
+      /* 이미지 사이즈 조절 */
+      /* 가로 세로 */       
+      background-size: cover;
+      /* cover = 액자를 꽉채우고 넘치는 사진은 좀 짤림,
+         contain 사진 그대로 최대 비율로 채움 남는 부분이 생길수있음 */
+      
+      /* 배경 반복 설정 */
+      background-repeat: no-repeat;
+      background-color: orange;
+
+      /* 배경 위치 조절 */
+      background-position: center;
+
+      /* 단축속성 /앞에가 위치 뒤에가 사이즈 조절 */
+      /* background: red url('../img/logo.png') no-repeat 
+      center / cover;  */
+
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

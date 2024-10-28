@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- placeholder : 예시 제시 -->
+      
+
+    <form action="#">
+        <input type="text" placeholder="이름을 입력하세요." disabled>  <!-- disabled 입력 막기 -->
+        <br>
+        <input type="password" placeholder="비밀번호를 입력하세요.">
+        <br>
+        <input type="email" value="abc">        <!-- value 수정할때 많이 씀 -->
+        <br>
+        취미:        
+        <label><input type="checkbox" name="hobby"> 운동</label>     <!-- label로 묶이면 글씨 눌러도 체크 가능 -->
+        <label><input type="checkbox" name="hobby"> 명상</label>
+        <input id="breathe" type="checkbox" name="hobby"> 
+        <br>
+
+        약관 동의:
+        <!-- checked = 초기설정 -->
+        <label><input type="radio" name="agree" checked > 예</label>
+        <label><input type="radio" name="agree"> 아니오</label>
+        <br>
+
+        <input type="number" value="0" max="5" min="0">
+        <br>
+
+        <input type="range" value="3" max="5" min="1">
+        <br>
+        <!-- accept = 제약을 걸 수 있다 -->
+        <input type="file" multiple accept="image/*">
+        <br>
+
+        <!-- cols 글자 바이트수 -->
+        <textarea rows="5" cols="10"></textarea>
+        <br>
+
+
+
+        <select>
+            <option>아메리카노</option>
+            <option disabled>카페라떼</option>
+            <!-- selected = 초기설정 -->
+            <option selected>카푸치노</option>
+        </select> 
+        <br>
+
+        <!-- type button은 백지 상태 -->
+        <button type="button">확인</button>
+        <!-- type을 설정하지 않으면 submit이 기본 -->
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        
+
+        <!-- 명시성이 떨어짐, 닫는태그가 있는지 없는지 되도록 button쓰기 -->
+        <input type="button" value="버튼2">
+
+        <label for="breathe">숨쉬기</label>
+        <br>
+
+    </form>
+</body>
+</html>

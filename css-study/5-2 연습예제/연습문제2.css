@@ -1,0 +1,195 @@
+@import url(../common.css);
+
+
+
+body{
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+  
+}
+
+header { 
+  background: white;
+  padding: 10px;
+  
+}
+
+header .header-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between
+}
+
+header .header-nav .logo {
+  flex: 0.8;
+}
+header .header-nav .logo .logo-img{
+  
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;  
+}
+
+header .header-nav .logo .logo-img img {
+  width:80%;
+  
+}
+
+header .header-nav .search-bar {
+  
+  
+  padding: 0 10px;
+  flex: 3;  
+
+}
+
+header .header-nav .search-bar input {
+  
+  width: 70%;
+  background: rgb(234, 231, 231);
+  border: 1px solid rgb(221, 219, 219);
+  
+}
+
+header .header-nav .nav-icons {
+  
+  display: flex;
+  justify-content: flex-end; 
+
+  flex: 1;
+}
+
+header .header-nav .nav-icons a {
+  justify-content: space-evenly;
+  margin: 6px;
+}
+
+body main {
+  border-top: 1px solid rgb(221, 219, 219);
+  border-bottom: 1px solid rgb(221, 219, 219);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;  
+  flex: 1;
+  padding: 10px;
+  background: rgb(236, 233, 233)
+  
+}
+
+body main .main-section {  
+  width:500px;
+  border: 1px solid rgb(221, 219, 219);
+  background: white;
+}
+
+body main .sub-section {
+  
+  width: 18%;
+  margin-left: 15px;   
+  margin-top: 10px;
+  
+}
+
+body main .main-section .main-header {
+  
+  padding: 4px;
+}
+
+body main .main-section .main-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+}
+
+body main .main-section .main-header .post-img {  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body main .main-section .main-header .post-img img {
+  width: 100%;
+  
+}
+
+body main .main-section .main-header p {
+  margin-left: 10px;
+}
+
+
+main .main-section .main-body img {
+  width: 100%;
+}
+
+main .main-section .main-footer {  
+  margin: 10px;
+}
+
+
+body main .sub-section .sub-box  .user-box {
+  display: flex;  
+  align-items: center;
+  padding: 5px;
+}
+body main .sub-section .sub-box  .user-box .name {
+  margin-left: 12px;
+}
+
+#username {
+  font-weight: 700;   
+}
+
+body main .sub-section .post-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+body main .sub-section .box {
+  width: 100%;
+  border: 1px solid rgb(221, 219, 219);
+  background: white;
+  padding: 7px;
+  margin-top: 10px;
+}
+
+body main .sub-section .box .user-box {
+
+  display: flex;
+  justify-content: space-around;
+
+  margin: 4px;
+}
+
+body main .sub-section .box h1 {
+  margin: 20px 0 20px 12px;
+}
+
+body main .sub-section .box .user-box .follow-button {
+  background: rgb(88, 156, 238);
+  border-radius: 10px;
+}
+footer{
+  background: rgb(236, 233, 233)
+}
+
+footer ul {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+footer ul li {
+  color: navy;
+  margin: 0 10px;
+}
+
+
+
+

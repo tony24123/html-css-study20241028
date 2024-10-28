@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td , th {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 7px;
+        }
+        th {
+            background: lightgray;
+        }
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 1 -->
+    <h1>쇼핑목록</h1>
+    <table>
+        <tbody>
+            <tr>
+                <th>제품 이름</th>
+                <th>제품 가격</th>
+            </tr>
+            <!-- tr*2>td*2 -->
+            <tr>
+                <td>축구화</td>
+                <td>30000원</td>
+            </tr>
+            <tr>
+                <td>축구공</td>
+                <td>5000원</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 2 -->
+    <h1>회원가입</h1>
+    <form>
+        <!-- required = 필수입력 -->
+        <label>
+            사용자 이름 : <input type="text" placeholder="사용자이름" required>
+        </label>
+        <br>
+        <label>
+            비밀번호 : <input type="password" placeholder="비밀번호를 입력하시오." required>
+        </label>
+        <br>
+        <label>
+            이메일 : <input type="email" placeholder="이메일을 입력하시오." required>
+        </label>
+        <br>
+    <!-- 3 -->
+        
+        <br>
+        <label>
+            자기소개 :
+            <textarea rows="5"></textarea></label>
+        <br>
+        <button>회원가입하기</button>
+
+    </form>
+    <!-- 4 -->
+    <h1>연락처 정보</h1>
+
+    <form>
+        <label for="phone">전화번호:</label>
+        <input type="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" ><br><br>
+        <small>형식: 123-456-7890</small><br><br>
+
+        <button type="submit">제출</button>
+    </form>
+
+
+    
+
+</body>
+</html>
